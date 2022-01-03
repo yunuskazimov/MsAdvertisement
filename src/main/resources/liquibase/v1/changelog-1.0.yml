@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create Advertisements table
+      author: Yunus Kazimov
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    unique: true
+                    nullable: true
+              - column:
+                  name: user_id
+                  type: bigint
+              - column:
+                  name: name
+                  type: varchar(32)
+              - column:
+                  name: description
+                  type: varchar(255)
+              - column:
+                  name: ad_type
+                  type: varchar(32)
+              - column:
+                  name: status
+                  type: varchar(32)
+              - column:
+                  name: is_deleted
+                  type: boolean
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
+            schemaName: public
+            tableName: ads
