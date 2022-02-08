@@ -1,11 +1,11 @@
-package az.xazar.msadvertisement.model.Ad;
+package az.xazar.msadvertisement.model.client.permission;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import java.util.Locale;
 
-public enum AdTypeEnum {
-    SHARE, ACCEPT, DECLINE;
+public enum Role {
+    USER, ADMIN, REPORTER, MANAGER;
 
     @JsonValue
     public String toLower() {

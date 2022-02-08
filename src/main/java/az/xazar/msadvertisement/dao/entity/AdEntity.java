@@ -1,8 +1,7 @@
-package az.xazar.msadvertisement.entity;
+package az.xazar.msadvertisement.dao.entity;
 
 
-import az.xazar.msadvertisement.model.Ad.AdStatusEnum;
-import az.xazar.msadvertisement.model.Ad.AdTypeEnum;
+import az.xazar.msadvertisement.model.StatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,15 +26,12 @@ public class AdEntity {
     private Long userId;
     private String name;
     private String description;
-
     @Enumerated(EnumType.STRING)
-    private AdTypeEnum adType;
-    private boolean isDeleted;
-    @Enumerated(EnumType.STRING)
-    private AdStatusEnum status;
+    private StatusEnum status;
+    private boolean deleted;
 
     @CreationTimestamp
-    @Column(nullable = false,updatable = false)
+    @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
     @UpdateTimestamp

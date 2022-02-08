@@ -1,11 +1,11 @@
-package az.xazar.msadvertisement.model.Ad;
+package az.xazar.msadvertisement.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import java.util.Locale;
 
-public enum AdStatusEnum {
-    ACTIVE, DEACTIVE;
+public enum StatusEnum {
+    SHARE, PENDING;
 
     @JsonValue
     public String toLower() {

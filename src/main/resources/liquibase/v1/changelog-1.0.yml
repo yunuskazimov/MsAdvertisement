@@ -18,18 +18,15 @@ databaseChangeLog:
                   type: bigint
               - column:
                   name: name
-                  type: varchar(32)
+                  type: varchar(64)
               - column:
                   name: description
                   type: varchar(255)
               - column:
-                  name: ad_type
-                  type: varchar(32)
-              - column:
                   name: status
-                  type: varchar(32)
+                  type: varchar(64)
               - column:
-                  name: is_deleted
+                  name: deleted
                   type: boolean
               - column:
                   name: created_at
