@@ -1,4 +1,4 @@
-package az.xazar.msadvertisement.model.Ad.exception;
+package az.xazar.msadvertisement.model.exception;
 
 public class AdNotFoundException extends RuntimeException {
     public AdNotFoundException(String message) {

@@ -1,4 +1,4 @@
-package az.xazar.msadvertisement.model.client;
+package az.xazar.msadvertisement.model.client.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

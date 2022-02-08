@@ -1,8 +1,8 @@
 spring:
   datasource:
-    username: ${POSTGRES_USERNAME}
-    password: ${POSTGRES_PASSWORD}
-    url: ${MS_ADVERTISEMENT_URL}
+    username: xazar1
+    password: xazar1
+    url: jdbc:postgresql://localhost:5400/advertisement
   jpa:
     hibernate:
       ddl-auto: none
@@ -16,16 +16,16 @@ spring:
     enabled: true
 
 server:
-  port: ${MS_ADVERTISEMENT_PORT}
+  port: 8042
 
 client:
   users:
     int:
-      url: ${CLINET_MS_USER_URL}
+      url: http://localhost:8051/int/api/user/id
 
   permission:
     int:
-      url: ${CLIENT_MS_PERMISSION_URL}
+      url: http://localhost:8052/int/api/permission
 
 
 
